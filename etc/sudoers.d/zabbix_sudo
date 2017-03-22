@@ -1,0 +1,11 @@
+#
+# Zabbix Agent 
+#
+# Set privleged commands 
+#
+
+
+#  Exim MTA 
+
+zabbix ALL=(ALL) NOPASSWD:/usr/sbin/exim -bpc
+zabbix ALL=(ALL) NOPASSWD:/usr/bin/find /var/spool/exim/input -type f 
